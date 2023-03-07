@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ProyectoTdeA.Views.Edit"
+             NavigationPage.HasNavigationBar="False">
+    
+    <StackLayout Background="White">
+        <Image Source="https://upload.wikimedia.org/wikipedia/commons/0/05/Logo_del_TdeA.jpg"
+               Margin="0,0,0,0"
+              HeightRequest="200"
+               WidthRequest="230"/>
+        <Frame Background="#0E8717">
+            <Label Text="E D I T   U S E R"
+               TextColor="white"
+               FontSize="20"
+               FontAttributes="Bold"
+               HorizontalOptions="Center"/>
+        </Frame>
+        <Frame VerticalOptions="FillAndExpand"
+               Margin="20,0,20,50"
+               CornerRadius="20"
+               Background="White">
+
+            <StackLayout>
+
+
+                <Frame CornerRadius="10"
+                       Margin="0,10,0,0"
+                       Background="#DADFDB">
+                    <Entry Placeholder="Full name "
+                           PlaceholderColor="#9E9E9E"
+                           TextColor="#7F7979"/>
+                </Frame>
+                <Frame CornerRadius="10"
+                       Margin="0,10,0,0"
+                       Background="#DADFDB">
+                    <Entry Placeholder="Email"
+                           PlaceholderColor="#9E9E9E"
+                           TextColor="#7F7979"/>
+                </Frame>
+                <Frame CornerRadius="10"
+                       Margin="0,10,0,0"
+                       Background="#DADFDB">
+                    <Entry Placeholder="Identification document"
+                           PlaceholderColor="#9E9E9E"
+                           TextColor="#7F7979"/>
+                </Frame>
+                <Frame CornerRadius="10"
+                       Margin="0,10,0,0"
+                       Background="#DADFDB">
+                    <Entry Placeholder="Cell phone number"
+                           PlaceholderColor="#9E9E9E"
+                           TextColor="#7F7979"/>
+                </Frame>
+
+                <StackLayout Orientation="Horizontal" Margin="0,10,0,0">
+                    <Button Text="Edit"   Background="#138A34" />
+                    <Button Text="Save"   Background="#138A34" />
+                    <Button Text="Return"     
+                            Background="#138A34" 
+                            x:Name="btnVolver3"
+                            Clicked="btnVolver3_Clicked"/>
+
+                </StackLayout>
+
+
+            </StackLayout>
+        </Frame>
+
+    </StackLayout>
+</ContentPage>

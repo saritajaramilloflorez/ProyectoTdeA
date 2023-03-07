@@ -1,0 +1,35 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+using Xamarin.Forms;
+using Xamarin.Forms.Xaml;
+
+namespace ProyectoTdeA.Views
+{
+    [XamlCompilation(XamlCompilationOptions.Compile)]
+    public partial class Login : ContentPage
+    {
+        public Login()
+        {
+            InitializeComponent();
+        }
+
+        private void btnIngresar_Clicked(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new Welcome());
+        }
+
+        private void btnRegistrar_Clicked(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new RegisterUser());
+        }
+
+        private void btnOlvidar_Clicked(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new ForgotPassword());
+        }
+    }
+}

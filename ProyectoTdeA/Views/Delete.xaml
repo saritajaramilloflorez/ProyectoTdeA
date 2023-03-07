@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ProyectoTdeA.Views.Delete"
+             NavigationPage.HasNavigationBar="False">
+    <StackLayout Background="White">
+        <Image Source="https://upload.wikimedia.org/wikipedia/commons/0/05/Logo_del_TdeA.jpg"
+               Margin="0,0,0,0"
+              HeightRequest="200"
+               WidthRequest="200"/>
+        <Frame Background="#0E8717">
+            <Label Text="D E L E T E   U S E R"
+               TextColor="white"
+               FontSize="20"
+               FontAttributes="Bold"
+               HorizontalOptions="Center"/>
+        </Frame>
+
+        <StackLayout>
+
+            <Image Source="TablaUser.PNG"
+               Margin="0,40,0,0"
+               HeightRequest="200"
+               WidthRequest="200"
+              />
+
+            <StackLayout Orientation="Horizontal" Margin="0,60,0,0">
+                <Button Text="Delete"   Background="#138A34" />
+                <Button Text="Return"     
+                            Background="#138A34" 
+                            x:Name="btnVolver4"
+                            Clicked="btnVolver4_Clicked" />
+
+            </StackLayout>
+
+
+
+        </StackLayout>
+
+
+    </StackLayout>
+</ContentPage>

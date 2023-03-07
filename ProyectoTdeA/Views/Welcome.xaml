@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ProyectoTdeA.Views.Welcome"
+             NavigationPage.HasNavigationBar="False">
+    
+    
+    <StackLayout Background="White">
+        <Image Source="https://upload.wikimedia.org/wikipedia/commons/0/05/Logo_del_TdeA.jpg"
+               Margin="0,0,0,0"
+              HeightRequest="200"
+               WidthRequest="200"/>
+        <Frame Background="#0E8717">
+        <Label Text="W E L C O M E"
+               TextColor="white"
+               FontSize="20"
+               FontAttributes="Bold"
+               HorizontalOptions="Center"/>
+        </Frame>
+
+        <StackLayout>
+
+            <Image Source="https://www.tdea.edu.co/images/tdea/galeria/admisiones/inscripciones_2020_2/10%20-%20Gui%CC%81a%20de%20inscripcio%CC%81n%20para%20ASPIRANTES%20A%20ESPECIALIZACIONES.jpg"
+               Margin="0,0,0,0"
+               WidthRequest="250"
+              />
+
+                <Button Text="Return"
+                        Background="#138A34"
+                        HorizontalOptions="Center"
+                        x:Name="btnVolver"
+                        Clicked="btnVolver_Clicked"/>
+
+            </StackLayout>
+        
+
+    </StackLayout>
+
+</ContentPage>
